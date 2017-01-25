@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">LoginScreen</string>
+    <string name="tumblr_header">tumblr.</string>
+    <string name="tumblr_motto">Follow the world\'s creators</string>
+    <string name="tumblr_login">Log in</string>
+    <string name="tumblr_signup">Sign Up</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="login_btn">Log in</string>
 </resources>
