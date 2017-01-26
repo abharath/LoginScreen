@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnLogin"
             android:layout_weight="1"
+            android:backgroundTint="@color/Blue"
             android:onClick="onLoginClick" />
 
         <Button
@@ -27,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnSignUp"
+            android:backgroundTint="@color/Blue"
             android:layout_weight="1" />
     </LinearLayout>
 
@@ -36,6 +38,10 @@
         android:id="@+id/tvTumblrMotto"
         android:text="@string/tumblr_motto"
         android:layout_alignParentTop="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
         android:layout_centerHorizontal="true" />
 
     <ImageView

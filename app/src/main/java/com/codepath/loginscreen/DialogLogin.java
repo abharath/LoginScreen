@@ -1,7 +1,9 @@
 package com.codepath.loginscreen;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
@@ -31,24 +33,18 @@ public class DialogLogin extends DialogFragment {
         return dialogLogin;
     }
 
-    @Nullable
+    @NonNull
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        super.onCreateView(inflater, container, savedInstanceState);
-        return inflater.inflate(R.layout.dialog_login, container);
-    }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        Button loginBtn = (Button) view.findViewById(R.id.btnDialogLogin);
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        Dialog loginDialog = new Dialog(getActivity(), R.style.DialogLoginTheme);
+        loginDialog.setContentView(R.layout.dialog_login);
+        Button loginBtn = (Button) loginDialog.findViewById(R.id.btnDialogLogin);
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Toast.makeText(getContext(), "Login Successful", Toast.LENGTH_LONG).show();
             }
         });
+        return loginDialog;
     }
 }

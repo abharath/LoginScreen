@@ -8,4 +8,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/background_material_dark</item>
+        <item name="android:windowBackground">@color/LightBlue</item>
+    </style>
+
+    <style name="DialogLoginTheme" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>
